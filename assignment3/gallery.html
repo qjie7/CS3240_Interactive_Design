@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Import custom.css to customize default Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/custom.css">
+    <!-- Import fonts from google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <title>My Gallery</title>
+    <meta name="description" content="NUS CS3240 Assignment 3">
+    <meta name="author" content="Qian Jie">
+
+</head>
+
+<body>
+     <header class="container-fluid d-flex justify-content-end">
+        
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item ">
+                  <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./aboutme.html">About me</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="./gallery.html">Gallery</a>
+                </li>
+             
+              </ul>
+            </div>
+          </nav>
+    </header>
+
+    <!-- Photo Slider -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+
+        <!-- First Photo -->
+        <div class="carousel-inner">
+          <div class="carousel-item active text-center p-4">
+            <img class="d-block w-100 rounded" src="./images/myphoto.png" alt="First slide">
+            <div class="carousel-caption d-none d-md-block bg-dark">
+                <h5>Tioman Island</h5>
+                <p>2 June 2018</p>
+            </div>
+          </div>
+
+          <!-- Second Photo -->
+          <div class="carousel-item text-center p-4">
+            <img class="d-block w-100 rounded" src="./images/myphoto_bali.png" alt="Second slide">
+            <div class="carousel-caption d-none d-md-block  bg-dark">
+                <h5>Devil's Tear @ Bali  </h5>
+                <p>7 December 2018</p>
+            </div>
+          </div>
+
+          <!-- Third Photo -->
+          <div class="carousel-item text-center p-4">
+            <img class="d-block w-100 rounded" src="./images/safmc.png" alt="Third slide">
+            <div class="carousel-caption d-none d-md-block  bg-dark">
+                <h5>Awarded Champion @ SAFMC Competition</h5>
+                <p>11 June 2015</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+</body>
+</html>
